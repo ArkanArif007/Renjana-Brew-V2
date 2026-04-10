@@ -5,17 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Admin Panel - Renjana Brew</title>
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <style>
+    body { margin: 0; font-family: sans-serif; background: #f8fafc; display: flex; justify-content: center; align-items: center; height: 100vh; }
+    .loader { padding: 20px; background: white; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+  </style>
 </head>
 <body>
+  <div class="loader">Memuat panel admin...</div>
   <script>
-    // Tangani redirect Netlify Identity
+    // Inisialisasi Identity Widget
     if (window.netlifyIdentity) {
       window.netlifyIdentity.on("init", user => {
-        if (!user) {
-          window.netlifyIdentity.on("login", () => {
-            document.location.href = "/admin/";
-          });
+        // Jika ada token recovery/invite di URL, paksa buka modal
+        if (window.location.hash.includes('recovery_token') || window.location.hash.includes('invite_token')) {
+          window.netlifyIdentity.open("login");
+        } else if (!user) {
+          window.netlifyIdentity.open("login");
+        } else {
+          document.location.href = "/admin/";
         }
+      });
+      window.netlifyIdentity.on("login", () => {
+        document.location.href = "/admin/";
       });
     }
   </script>
