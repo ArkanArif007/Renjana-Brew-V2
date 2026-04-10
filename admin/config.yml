@@ -1,41 +1,59 @@
 backend:
   name: git-gateway
   branch: main
+
 media_folder: "assets/images"
 public_folder: "/assets/images"
 site_url: https://funny-meerkat-e28646.netlify.app
+
 collections:
   - name: "home"
-    label: "Homepage"
-    file: "content/home.md"
-    format: "frontmatter"
-    fields:
-      - {label: "Judul", name: "title", widget: "string"}
-      - {label: "Deskripsi", name: "desc", widget: "text"}
+    label: "🏠 Homepage"
+    files:
+      - name: "home"
+        label: "Halaman Utama"
+        file: "content/home.md"
+        fields:
+          - { label: "Judul Hero", name: "title", widget: "string" }
+          - { label: "Deskripsi", name: "desc", widget: "text" }
+
   - name: "products"
-    label: "Produk"
-    file: "content/products.json"
-    format: "json"
-    fields:
-      - {label: "Produk", name: "products", widget: "list", fields: [
-          {label: "ID", name: "id", widget: "string"},
-          {label: "Nama", name: "name", widget: "string"},
-          {label: "Deskripsi", name: "desc", widget: "text"},
-          {label: "Harga", name: "price", widget: "number"},
-          {label: "Harga Asli", name: "original", widget: "number"},
-          {label: "Badge", name: "badge", widget: "string", required: false}
-        ]}
+    label: "🍵 Produk"
+    files:
+      - name: "products"
+        label: "Data Produk"
+        file: "content/products.json"
+        format: "json"
+        fields:
+          - label: "Daftar Produk"
+            name: "products"
+            widget: "list"
+            fields:
+              - { label: "ID", name: "id", widget: "string" }
+              - { label: "Nama", name: "name", widget: "string" }
+              - { label: "Deskripsi", name: "desc", widget: "text" }
+              - { label: "Harga", name: "price", widget: "number" }
+              - { label: "Harga Coret", name: "original", widget: "number" }
+              - { label: "Badge", name: "badge", widget: "string", required: false }
+
   - name: "bundles"
-    label: "Paket"
-    file: "content/bundles.json"
-    format: "json"
-    fields:
-      - {label: "Paket", name: "bundles", widget: "list", fields: [
-          {label: "ID", name: "id", widget: "string"},
-          {label: "Nama", name: "name", widget: "string"},
-          {label: "Deskripsi", name: "desc", widget: "text"},
-          {label: "Harga", name: "price", widget: "number"},
-          {label: "Harga Asli", name: "original", widget: "number"},
-          {label: "Populer?", name: "popular", widget: "boolean"},
-          {label: "Isi", name: "includes", widget: "list"}
-        ]}
+    label: "📦 Paket Hemat"
+    files:
+      - name: "bundles"
+        label: "Data Paket"
+        file: "content/bundles.json"
+        format: "json"
+        fields:
+          - label: "Daftar Paket"
+            name: "bundles"
+            widget: "list"
+            fields:
+              - { label: "ID", name: "id", widget: "string" }
+              - { label: "Nama", name: "name", widget: "string" }
+              - { label: "Deskripsi", name: "desc", widget: "text" }
+              - { label: "Harga", name: "price", widget: "number" }
+              - { label: "Harga Coret", name: "original", widget: "number" }
+              - { label: "Populer?", name: "popular", widget: "boolean" }
+              - label: "Isi Paket"
+                name: "includes"
+                widget: "list"
