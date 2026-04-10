@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Renjana Brew | Premium Kombucha Bogor</title>
+  <meta name="description" content="Kombucha premium fermentasi alami dari Kota Bogor. Kaya probiotik, 100% bahan alami, bebas pengawet.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#home" class="logo">🍵 Renjana Brew</a>
+      <nav class="nav">
+        <button class="theme-toggle" aria-label="Toggle theme">🌗</button>
+        <a href="#home">Beranda</a>
+        <a href="#about">Tentang</a>
+        <a href="#products">Produk</a>
+        <a href="#bundles">Paket</a>
+        <a href="#testimonials">Testimoni</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <button class="cart-btn" aria-label="Keranjang">
+        🛒 <span class="cart-count">0</span>
+      </button>
+      <button class="mobile-menu-btn" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <main id="app">
+    <!-- Content will be injected by app.js -->
+    <div class="loader">Memuat konten...</div>
+  </main>
+
+  <!-- Cart Sidebar -->
+  <aside class="cart-sidebar" id="cart-sidebar">
+    <div class="cart-header">
+      <h2>🛒 Keranjang</h2>
+      <button class="close-cart" aria-label="Tutup">✕</button>
+    </div>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-footer">
+      <div class="cart-total">Total: <span id="cart-total">Rp0</span></div>
+      <form id="checkout-form">
+        <input type="text" id="cust-name" placeholder="Nama Lengkap *" required>
+        <input type="tel" id="cust-wa" placeholder="No. WhatsApp *" required pattern="[0-9]{10,13}">
+        <input type="text" id="cust-address" placeholder="Alamat Pengiriman *" required>
+        <textarea id="cust-notes" placeholder="Catatan (opsional)"></textarea>
+        <button type="submit" class="btn-wa">💬 Checkout via WhatsApp</button>
+      </form>
+    </div>
+  </aside>
+  <div class="overlay" id="overlay"></div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
