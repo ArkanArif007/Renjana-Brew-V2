@@ -1,5 +1,44 @@
-[
-  {"id":"starter", "name":"Starter Pack", "desc":"3 botol — 1 tiap varian", "price":99000, "original":108000, "popular":false, "includes":["✓ 1x Green Tea", "✓ 1x Black Tea", "✓ 1x Jasmine Tea", "✓ Free Stiker"]},
-  {"id":"weekly", "name":"Weekly Pack", "desc":"6 botol — stok seminggu", "price":179000, "original":216000, "popular":true, "includes":["✓ 2x Setiap Varian", "✓ Free Ongkir Bogor", "✓ Free Tote Bag"]},
-  {"id":"family", "name":"Family Pack", "desc":"12 botol — untuk keluarga", "price":329000, "original":432000, "popular":false, "includes":["✓ 4x Setiap Varian", "✓ Free Ongkir Jabodetabek", "✓ Free Tumbler"]}
-]
+{
+  "bundles": [
+    {
+      "id": "starter",
+      "name": "Starter Pack",
+      "desc": "3 botol — 1 tiap varian",
+      "price": 99000,
+      "original": 108000,
+      "popular": false,
+      "includes": [
+        "✓ 1x Green Tea",
+        "✓ 1x Black Tea",
+        "✓ 1x Jasmine Tea",
+        "✓ Free Stiker"
+      ]
+    },
+    {
+      "id": "weekly",
+      "name": "Weekly Pack",
+      "desc": "6 botol — stok seminggu",
+      "price": 179000,
+      "original": 216000,
+      "popular": true,
+      "includes": [
+        "✓ 2x Setiap Varian",
+        "✓ Free Ongkir Bogor",
+        "✓ Free Tote Bag"
+      ]
+    },
+    {
+      "id": "family",
+      "name": "Family Pack",
+      "desc": "12 botol — untuk keluarga",
+      "price": 329000,
+      "original": 432000,
+      "popular": false,
+      "includes": [
+        "✓ 4x Setiap Varian",
+        "✓ Free Ongkir Jabodetabek",
+        "✓ Free Tumbler"
+      ]
+    }
+  ]
+}
