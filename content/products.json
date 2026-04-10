@@ -1,14 +1,6 @@
 {
   "products": [
     {
-      "id": "green",
-      "name": "Kombucha Green Tea",
-      "desc": "Perpaduan teh hijau premium dengan fermentasi sempurna. Rasa segar & kaya antioksidan.",
-      "price": 35000,
-      "original": 45000,
-      "badge": "Best Seller"
-    },
-    {
       "id": "black",
       "name": "Kombucha Black Tea",
       "desc": "Karakter bold & robust dari teh hitam pilihan. Rasa mendalam yang memanjakan.",
@@ -17,12 +9,28 @@
       "badge": ""
     },
     {
+      "id": "green",
+      "name": "Kombucha Green Tea",
+      "desc": "Perpaduan teh hijau premium dengan fermentasi sempurna. Rasa segar & kaya antioksidan.",
+      "price": 35000,
+      "original": 45000,
+      "badge": "Best Seller"
+    },
+    {
       "id": "jasmine",
       "name": "Kombucha Jasmine Tea",
       "desc": "Keanggunan bunga melati bertemu fermentasi. Aroma floral menenangkan.",
       "price": 38000,
       "original": 48000,
       "badge": "Limited"
+    },
+    {
+      "id": "Dragon Fruit",
+      "name": "Kombucha Dragon Fruit",
+      "desc": "Rasa Buah Naga ",
+      "price": 20004,
+      "original": 48000,
+      "badge": "limited"
     }
   ]
 }
