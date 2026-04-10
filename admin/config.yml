@@ -3,6 +3,7 @@ backend:
   branch: main
 media_folder: "assets/images"
 public_folder: "/assets/images"
+site_url: https://funny-meerkat-e28646.netlify.app
 collections:
   - name: "home"
     label: "Homepage"
