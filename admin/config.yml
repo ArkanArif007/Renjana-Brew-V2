@@ -30,6 +30,7 @@ collections:
             widget: "list"
             fields:
               - { label: "ID", name: "id", widget: "string" }
+              - { label: "Foto Produk", name: "image", widget: "image", required: false }
               - { label: "Nama", name: "name", widget: "string" }
               - { label: "Deskripsi", name: "desc", widget: "text" }
               - { label: "Harga", name: "price", widget: "number" }
@@ -49,6 +50,7 @@ collections:
             widget: "list"
             fields:
               - { label: "ID", name: "id", widget: "string" }
+              - { label: "Foto Produk", name: "image", widget: "image", required: false }
               - { label: "Nama", name: "name", widget: "string" }
               - { label: "Deskripsi", name: "desc", widget: "text" }
               - { label: "Harga", name: "price", widget: "number" }
